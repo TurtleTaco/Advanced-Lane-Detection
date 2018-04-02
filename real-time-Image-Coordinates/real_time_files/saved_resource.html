@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://fiddle.jshell.net/az8Uu/321/show/light/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <script type="text/javascript" src="./jquery-1.6.3.js"></script>
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    
+
+  </style>
+
+  <title></title>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(window).load(function(){
+
+$(function(){
+
+$image = $('#the_image');
+imgPos = [
+    $image.offset().left,
+    $image.offset().top,
+    $image.offset().left + $image.outerWidth(),
+    $image.offset().top + $image.outerHeight()
+];
+
+$image.mousemove(function(e){
+  $('#coords').html((e.pageX-imgPos[0]) +', '+ (e.pageY-imgPos[1]));
+});
+
+});
+
+});
+
+
+
+
+</script>
+
+  
+<style></style></head>
+
+<body>
+  <img id="the_image" src="./bhvpy.png">
+
+<div id="coords">245, 172</div>
+
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "az8Uu"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+</body></html>

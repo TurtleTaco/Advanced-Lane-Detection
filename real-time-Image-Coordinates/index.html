@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.6.3.js"></script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+
+
+  <style type="text/css">
+
+
+  </style>
+
+  <title></title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(window).load(function(){
+
+$(function(){
+
+$image = $('#the_image');
+imgPos = [
+    $image.offset().left,
+    $image.offset().top,
+    $image.offset().left + $image.outerWidth(),
+    $image.offset().top + $image.outerHeight()
+];
+
+$image.mousemove(function(e){
+  $('#coords').html((e.pageX-imgPos[0]) +', '+ (e.pageY-imgPos[1]));
+});
+
+});
+
+});
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+  <img id="the_image" src="http://i.imgur.com/bhvpy.png" />
+
+<div id="coords"></div>
+
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "az8Uu"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+
