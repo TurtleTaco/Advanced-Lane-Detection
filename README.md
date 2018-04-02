@@ -93,7 +93,7 @@ The perpective transform funcion is included in `corners_unwarp`
 
 ```python
 src = np.float32([[(200, 720), (570, 470), (720, 470), (1130, 720)]])
-    dst = np.float32([[(350, 720), (350, 0), (980, 0), (980, 720)]])
+dst = np.float32([[(350, 720), (350, 0), (980, 0), (980, 720)]])
 ```
 
 This resulted in the following source and destination points:
